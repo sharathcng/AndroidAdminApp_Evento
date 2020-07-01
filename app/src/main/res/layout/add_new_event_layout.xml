@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editName"
+            android:hint="@string/event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:inputType="text"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editDate"
+            android:hint="@string/event_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:inputType="text"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+
+<!--        <DatePicker-->
+<!--            android:id="@+id/datePicker1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="75dp"-->
+<!--            android:datePickerMode="spinner"-->
+<!--            android:calendarViewShown="false"-->
+<!--            />-->
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editTime"
+            android:hint="@string/event_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:inputType="text"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editDescription"
+            android:hint="@string/event_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:inputType="text"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editUrl"
+            android:hint="@string/event_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:inputType="text"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <info.hoang8f.widget.FButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSelect"
+                android:text="SELECT"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:buttonColor="@color/colorPrimary"
+                />
+
+            <info.hoang8f.widget.FButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnUpload"
+                android:text="UPLOAD"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:buttonColor="@color/colorPrimaryDark"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

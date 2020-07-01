@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Evento Admin</string>
+    <string name="event_name">Event name</string>
+    <string name="event_date">Event date</string>
+    <string name="event_time">Event time</string>
+    <string name="event_desc">Event Description</string>
+    <string name="event_url">Google form link</string>
+
+    <string name="url">
+        <a href="www.google.in">fill this form</a>
+    </string>
+
+
+</resources>
