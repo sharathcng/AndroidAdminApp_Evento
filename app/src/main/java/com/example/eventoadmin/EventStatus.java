@@ -50,10 +50,12 @@ public class EventStatus extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_status);
+        getSupportActionBar().setTitle("Ongoing Events");
 
 
         database = FirebaseDatabase.getInstance();
-        mRef = database.getReference("Events");
+        mRef = database.getReference("Ongoing Events");
+
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
 

@@ -1,6 +1,7 @@
 package com.example.eventoadmin;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -38,6 +39,11 @@ public class RegisteredDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registered_detail);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setTitle("Registered students");
+
         database = FirebaseDatabase.getInstance();
         mRef = database.getReference("Registrations");
 
@@ -73,5 +79,11 @@ public class RegisteredDetailActivity extends AppCompatActivity {
         };
         recycler_menu.setAdapter(adapter);
         recycler_menu.setLayoutAnimation(layoutAnimationController);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

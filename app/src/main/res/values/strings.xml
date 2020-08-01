@@ -10,5 +10,65 @@
         <a href="www.google.in">fill this form</a>
     </string>
 
+    <string name="tagline">Everyday Something New</string>
+    <string name="title">Evento</string>
+    <string name="login">login</string>
+    <string name="sign_up">sign up</string>
+    <string name="how_it_works">how it works ?</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="event_management_app">Event Management App</string>
+    <string name="skip">Skip</string>
+    <string name="let_s_get_started">Let\'s get started</string>
+
+    <string name="slider1">Find Events</string>
+    <string name="slider2">Register/Cancel</string>
+    <string name="slider3">Manage Events</string>
+    <string name="slider4">Stay Connected</string>
+
+    <string name="desc1">Find all the ongoing events here</string>
+    <string name="desc2">Makes registration or cancellation easy</string>
+    <string name="desc3">Manage your events in your pocket</string>
+    <string name="desc4">Get to know the notification of who all friends are attending events and also status of the events</string>
+    <string name="all_events">All Events</string>
+    <string name="my_events">My Events</string>
+    <string name="results">Results</string>
+    <string name="announcements">Announcements</string>
+    <string name="logout">logout</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="create_account">Create Account</string>
+    <string name="enter_full_name">Enter full name</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="next">NEXT</string>
+    <string name="choose_gender">Choose Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="select_your_age">Select Your Age</string>
+
+    //otp screen
+    <string name="otp_code_text">Code</string>
+    <string name="otp_verification_text">Verification</string>
+    <string name="otp_description_text">Enter one time password sent on\n</string>
+    <string name="verify_code">Verify code</string>
+    <string name="make_nselection">Make\nselection</string>
+    <string name="selection_desc">Make which contact detail should we use to reset your password?</string>
+    <string name="via_sms">Via SMS:</string>
+    <string name="via_email">Via email:</string>
+    <string name="credential_desc">Your Identity Has Been Verified!\nSet Your New Password</string>
+    <string name="update">Update</string>
+    <string name="password_updated">Your Password Has Been Updated</string>
+    <string name="forget_password_desc">Please enter your\nphone number to verify its you</string>
+    <string name="signout">Signout</string>
+    <string name="results_home">RESULTS</string>
+    <string name="coming_nsoon">Coming\nsoon</string>
+    <string name="add_new_event">Add New Event</string>
+    <string name="manage_events">Manage Events</string>
+
 
 </resources>

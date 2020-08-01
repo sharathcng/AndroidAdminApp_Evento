@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_home"
+            android:id="@+id/home"
+            android:title="@string/home" />
+        <item
+            android:icon="@drawable/ic_all_events"
+            android:id="@+id/manage_events"
+            android:title="@string/manage_events" />
+        <item
+            android:icon="@drawable/ic_my_events"
+            android:id="@+id/add_new_event"
+            android:title="@string/add_new_event" />
+        <item
+            android:icon="@drawable/ic_results"
+            android:id="@+id/results"
+            android:title="@string/results" />
+        <item
+            android:icon="@drawable/ic_notifications"
+            android:id="@+id/announcements"
+            android:title="@string/announcements" />
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:icon="@drawable/profile"
+                    android:id="@+id/profile"
+                    android:title="@string/profile" />
+                <item
+                    android:icon="@drawable/ic_logout"
+                    android:id="@+id/logout"
+                    android:title="@string/logout" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

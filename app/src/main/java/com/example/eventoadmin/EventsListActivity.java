@@ -63,7 +63,7 @@ public class EventsListActivity extends AppCompatActivity {
     TimePickerDialog picker;
 
     FirebaseDatabase database;
-    DatabaseReference mRef;
+    DatabaseReference mRef,mRefer;
     FirebaseStorage storage;
     StorageReference storageReference;
     FirebaseRecyclerAdapter<Events, EventsViewHolder> adapter;
@@ -77,7 +77,8 @@ public class EventsListActivity extends AppCompatActivity {
 
 
         database = FirebaseDatabase.getInstance();
-        mRef = database.getReference("Events");
+        mRef = database.getReference("Ongoing Events");
+        mRefer = database.getReference("All Events");
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
 
@@ -87,15 +88,13 @@ public class EventsListActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 showAddEventDialog();
-
-
-
                 }
 
         });
 
 
         ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Add New Event");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 
@@ -191,6 +190,7 @@ public class EventsListActivity extends AppCompatActivity {
                 if (newEvent != null)
                 {
                     mRef.push().setValue(newEvent);
+                    mRefer.push().setValue(newEvent);
                     Toast.makeText(EventsListActivity.this,"New Event "+newEvent.getName()+" is added",Toast.LENGTH_SHORT).show();
                 }
 

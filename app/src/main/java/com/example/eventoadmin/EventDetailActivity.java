@@ -60,7 +60,7 @@ public class EventDetailActivity extends AppCompatActivity {
 
         //firebase connection
         database = FirebaseDatabase.getInstance();
-        mRef = database.getReference("Events");
+        mRef = database.getReference("Ongoing Events");
         String currentUserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
         currentUserName = FirebaseAuth.getInstance().getCurrentUser().getDisplayName().toString();
         myRef = database.getReference("Users").child(currentUserId).child("MyEvents");
@@ -113,8 +113,8 @@ public class EventDetailActivity extends AppCompatActivity {
         try {
             json.put("to","/topics/"+"news");
             JSONObject notificationObj = new JSONObject();
-            notificationObj.put("title",currentUserName);
-            notificationObj.put("body","is going to attend "+eveName+" Event");
+            notificationObj.put("title",eveName);
+            notificationObj.put("body","Click here to register for "+eveName+" Event");
             json.put("notification",notificationObj);
 
 
@@ -172,28 +172,6 @@ public class EventDetailActivity extends AppCompatActivity {
                 collapsingToolbarLayout.setTitle(event.getName());
                 final Events clickItem = event;
 
-
-//                btnRegister.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//
-//                        String name = eventName.getText().toString();
-//                        String date = eventDate.getText().toString();
-//                        String time = eventTime.getText().toString();
-//                        String desc = eventDescription.getText().toString();
-//                        String url = form_url.getText().toString();
-//
-//                        Events data = new Events(name, poster, date, time, desc, url);
-//                        myRef.child(name).setValue(data);
-//
-//                        Toast.makeText(EventDetailActivity.this, "Successfully registered to " + clickItem.getName(), Toast.LENGTH_SHORT).show();
-//                        btnRegister.setTextColor(Color.WHITE);
-//                        btnRegister.setText("Registered");
-//
-//
-//
-//                    }
-//                });
             }
 
             @Override

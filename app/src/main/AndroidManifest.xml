@@ -14,23 +14,50 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <service
-            android:name=".Service.StatusNotification"
-            android:enabled="true"
-            android:exported="true"></service>
-
-        <activity android:name=".EventStatus" />
-        <activity android:name=".RegisteredDetailActivity" />
-        <activity android:name=".EventDetailActivity" />
-        <activity android:name=".EventsListActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Announcements"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".EventsResultsActivity" />
+        <activity android:name=".common.login.ForgetPasswordSuccessMessage" />
+        <activity android:name=".common.login.SetNewPassword" />
+        <activity android:name=".common.login.MakeSelection" />
+        <activity android:name=".common.login.ForgetPassword" />
+        <activity
+            android:name=".common.login.VerifyOTP"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common.login.SignUpScreen3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common.login.SignUpScreen2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common.login.SignUpScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common.login.OnBoardingScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common.login.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".common.login.StartingScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common.login.LoginScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EventStatus" />
+        <activity android:name=".RegisteredDetailActivity" />
+        <activity android:name=".EventDetailActivity" />
+        <activity android:name=".EventsListActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
